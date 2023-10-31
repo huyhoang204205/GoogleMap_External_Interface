@@ -48,5 +48,9 @@ function initMap() {
             infowindow.open(map, foundMarker);
         }
     }
-    document.getElementById('search-input').addEventListener('input', searchMarker);
+    document.getElementById('search-input').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            searchMarker();
+        }
+    })
 }
