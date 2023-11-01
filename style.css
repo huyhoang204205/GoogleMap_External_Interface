@@ -16,6 +16,7 @@ body{
     position: absolute;
     align-self: baseline;
     z-index: 1;
+    margin: 5px;
 }
 
 .contain {
